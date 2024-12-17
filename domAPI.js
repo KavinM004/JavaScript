@@ -23,6 +23,7 @@ removeChild.forEach((btn)=>{
     });
 });  */
 
+/*
 const h4 = document.querySelector('h4');
 h4.style.color = 'whitesmoke';
 h4.style.backgroundColor = 'blue';
@@ -44,4 +45,52 @@ function clock() {
     const time = date.getHours() + " : " + date.getMinutes()+' : '+date.getSeconds()+' : '+date.getMilliseconds();
     clockDiv.innerHTML = time;
 }
-setInterval(clock, 1000);
+setInterval(clock, 1000); */
+
+// DomApiFunction :
+/*
+// classList
+const box = document.querySelector('.box');
+const btnAdd = document.querySelector('#btnAdd');
+const btnRemove = document.querySelector('#btnRemove');
+const btnToggle = document.querySelector('#btnToggle');
+btnAdd.addEventListener('click', function(){
+    box.classList.add('newbox');
+});
+btnRemove.addEventListener('click', function(){
+    box.classList.remove('newbox');
+});
+btnToggle.addEventListener('click', function(){
+    box.classList.toggle('newbox');
+}); */
+
+/*
+// Get & Set attributes
+const textBox = document.querySelector("input");
+const btnSearch = document.querySelector("#btnSearch");
+btnSearch.addEventListener("click", function () {
+  const box = textBox.getAttribute("type");
+  if (box == "text") {
+    textBox.setAttribute("type", "password");
+  } else {
+    textBox.setAttribute("type", "text");
+  }
+});
+
+const checkBox = document.querySelector('#click');
+console.log(checkBox);
+checkBox.addEventListener('click', function(){
+    const cB = textBox.getAttribute('type');
+    if(cB == 'text'){
+         textBox.setAttribute("type", "password");
+    }else{
+        textBox.setAttribute("type", "text");
+    }
+}); */
+
+// Attributes :
+const textBox = document.querySelector("input");
+console.log(textBox.getAttributeNames());
+console.log(textBox.hasAttribute('type'));
+console.log(textBox.removeAttribute('id'));
+console.log(textBox.getAttributeNames());
