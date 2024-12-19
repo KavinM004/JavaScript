@@ -6,6 +6,25 @@
     <title>Javascript</title>
     <link rel="icon" href="./LOGO.png" />
     <style>
+      #touchArea{
+        width : 400px;
+        height : 200px;
+        /* line-height : 200px;
+        text-align: center;
+        color: aliceblue;
+        font-size: larger; */
+        background-color: blueviolet;
+        position: relative;
+      }
+      #ball{
+        width: 30px;
+        height: 30px;
+        background-color: rgb(144, 190, 231);
+        border-radius: 15px;
+        position: absolute;
+        top: 75px;
+        left: 75px;
+      }
       /* .box{
             width : 200px;
             height : 200px;
@@ -24,7 +43,7 @@
             background-color: black;
         } */
 
-      body {
+      /* body {
         font-family: Arial, sans-serif;
         background-color: #f4f4f4;
         margin: 0;
@@ -100,12 +119,15 @@
 
       button[type="reset"]:hover {
         opacity: 0.9;
-      }
+      } */
     </style>
   </head>
   <body bgcolor="whitesmoke">
     <h4>JavaScript tutorial :</h4>
-    <form action="#" autocomplete="off">
+    <div id="touchArea">
+      <div id="ball"></div>
+    </div>
+    <!-- <form action="#" autocomplete="off">
       <h4>user detail's</h4>
       <div class="form-group">
         <label for="userName">username :</label>
@@ -152,8 +174,7 @@
         <button type="submit">Submit</button>
         <button type="reset">Reset</button>
       </div>
-    </form>
-
+    </form> -->
     <!-- <label for="inputNum"></label>
     <input type='text' id="inputNum">
     <p>Enter only numerical</p> -->
@@ -206,7 +227,7 @@
             </tr>
         </tbody>
     </table> -->
-    <script src="formEvents.js"></script>
+    <script src="touchEvent.js"></script>
     <!-- 
     document.getElementById('btn'). onclick =  function(){
         alert('Welcome to Inline Props');
