@@ -6,13 +6,13 @@
     <title>Javascript</title>
     <link rel="icon" href="./LOGO.png" />
     <style>
-      #touchArea{
+      /* #touchArea{
         width : 400px;
         height : 200px;
         /* line-height : 200px;
         text-align: center;
         color: aliceblue;
-        font-size: larger; */
+        font-size: larger; 
         background-color: blueviolet;
         position: relative;
       }
@@ -24,7 +24,7 @@
         position: absolute;
         top: 75px;
         left: 75px;
-      }
+      } */
       /* .box{
             width : 200px;
             height : 200px;
@@ -42,7 +42,12 @@
             color: orange;
             background-color: black;
         } */
-
+      div{
+        margin: 10px;
+        padding: 20px;
+        border: 4px solid hotpink;
+        text-align: center;
+      }
       /* body {
         font-family: Arial, sans-serif;
         background-color: #f4f4f4;
@@ -124,9 +129,19 @@
   </head>
   <body bgcolor="whitesmoke">
     <h4>JavaScript tutorial :</h4>
-    <div id="touchArea">
-      <div id="ball"></div>
+    <div id="grandParent">
+      Grand Parent
+      <div id="parent">
+        Parent
+        <div id="child">
+          Child
+        </div>
+      </div>
     </div>
+    <!-- <button>promise</button> -->
+    <!-- <div id="touchArea">
+      <div id="ball"></div>
+    </div> -->
     <!-- <form action="#" autocomplete="off">
       <h4>user detail's</h4>
       <div class="form-group">
@@ -227,7 +242,7 @@
             </tr>
         </tbody>
     </table> -->
-    <script src="touchEvent.js"></script>
+    <script src="eventsInJS.js"></script>
     <!-- 
     document.getElementById('btn'). onclick =  function(){
         alert('Welcome to Inline Props');
