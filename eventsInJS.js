@@ -6,7 +6,7 @@
 
 // Event Bubbling || Event Caputring :
 
-const gP = document.querySelector('#grandParent');
+/*const gP = document.querySelector('#grandParent');
 const parent = document.querySelector('#parent');
 const child = document.querySelector('#child');
 
@@ -18,4 +18,13 @@ parent.addEventListener("click", function () {
 }, true);
 child.addEventListener("click", function () {
   console.log("Child Clicked");
-}, true);
+}, true); */
+
+const categories = document.getElementById('categories');
+const product = document.getElementsByClassName('product');
+
+categories.addEventListener('click', function(e){
+  if(e.target.className === 'product'){
+    window.location.href = '/' + e.target.id;
+  }
+});
