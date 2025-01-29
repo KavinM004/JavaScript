@@ -7,9 +7,11 @@
     <link rel="icon" href="./LOGO.png" />
     <style>
       .container{
-        background-color: blanchedalmond;
+        max-width: 500px;
+        margin-left: 20px;
+        background-color: rgb(233, 220, 241);
         font-family: Arial, Helvetica, sans-serif;
-        color: rgb(52, 88, 76);
+        color: rgb(107, 108, 108);
       }
       p{
         font-size: 20px;
@@ -18,6 +20,24 @@
         background-color: black;
         color: whitesmoke;
       }
+      .edit-delete-buttons{
+        display: flex;
+        gap: 4px;
+        margin-right: 40px;
+      }
+      #output{
+        margin-top: 15px;
+        border-top: 1px solid goldenrod;
+      }
+      #dataList{
+        list-style-type: none;
+      }
+      #dataList li{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2px;
+      }
+      
       /* #touchArea{
         width : 400px;
         height : 200px;
@@ -157,11 +177,26 @@
     </style>
   </head>
   <body bgcolor="whitesmoke">
-    <div class=" container" id="container">
+    <!-- CRUD with local Storage -->
+    <div class="container">
+      <h1>CRUD in Local Storage</h1>
+      <form id="dataForm">
+        <label for="dataInput">Enter your name : </label>
+        <input type="text" name="" id="dataInput">
+        <button type="submit">sumbit</button>
+      </form>
+      <div id="output">
+        <h2>Stored Data</h2>
+        <ul id="dataList">
+          
+        </ul>
+      </div>
+    </div>
+    <!-- <div class=" container" id="container">
       <h1 id="heading">JavaScript Tutorial</h1>
       <p id="para">love is letting go...</p>
       <button id="toggle">toggle</button>
-    </div>
+    </div> -->
     <!-- <input type="text" id="textInput"> -->
     <!-- <div class="container">
       <div id="categories">

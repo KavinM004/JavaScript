@@ -1,3 +1,4 @@
+/*
 const button = document.getElementById('toggle');
 const element = document.getElementById('container');
 button.addEventListener('click', function(){
@@ -12,4 +13,5 @@ window.addEventListener('DOMContentLoaded', function(){
         const element = document.getElementById("container");
         element.classList.add('dark');
     }
-});
+});  */
+
